@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class='nav'>
+    <a class='nav__item nav__item--left' href="#">Glyn</a>
+    <a class='nav__item' href="#">About</a>
+    <a class='nav__item' href="#">Skills</a>
+    <a class='nav__item' href="#">Projects</a>
+    <a class='nav__item' href="#">Blog</a>
+    <a class='nav__item' href="#">Contact</a>
+  </nav>
+
+  <section id='header' class='header'>
+    <h1>Glyn Lewington</h1>
+    <img class='header__img' src="./images/portrait-pic.jpg" alt="">
+    <p>Frotend Web Developer</p>
+  </section>
+
+  <section id='skills' class='skills'>
+    <header class='skills__header'>
+      <h2>Skills</h2>
+    </header>
+    <div class='skills__list'>
+      <div class='skills__item'>
+        <img src="images/css3.png" alt="">
+      </div>
+      <div class='skills__item'>
+        <img src="images/html.png" alt="">
+      </div>
+      <div class='skills__item'>
+        <img src="images/js.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id='projects' class='projects'>
+    <header class='projects__header'>
+      <h2>Projects</h2>
+    </header>
+    <div class='projects__list'>
+      <div class='projects__item'>
+        <a href="#">
+          <img src="images/hydrohealth-mobile.png" alt="">
+        </a>
+      </div>
+      <div class='projects__item'>
+        <a href="#">
+          <img src="images/simon-game.png" alt="">
+        </a>
+      </div>
+      <div class='projects__item'>
+        <a href="#">
+          <img src="images/tictactoe.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id='blog' class='blog'>
+    <header class='blog__header'>
+      <h2>Blog</h2>
+    </header>
+    <div class='slideshow'>
+      <div class='slideshow__item slideshow__item--current'>
+        <img class='slideshow__image' src="images/blog-minimax.png" alt="">
+      </div>
+      <div class='slideshow__item hidden'>
+        <img class='slideshow__image' src="images/blog-navbar.PNG" alt="">
+      </div>
+      <button class="slideshow__btn slideshow__btn--left">&#10094;</button>
+      <button class="slideshow__btn slideshow__btn--right">&#10095;</button>
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

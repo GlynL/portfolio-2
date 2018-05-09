@@ -1,0 +1,151 @@
+html, body {
+  margin: 0;
+}
+
+/* NAV */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3em;
+  position: fixed;
+  top: 0;
+  right:0;
+  left: 0;
+}
+
+.nav__item {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  opacity: 0.9;
+}
+
+.nav__item--left {
+  margin-right: auto;
+}
+
+.nav__item:hover {
+  text-decoration: underline;
+  opacity: 1;
+  transition: opacity .1s ease;
+}
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('./images/paul-jarvis-18909-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header__img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* SKILLS */
+.skills {
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills__header{
+  text-align: center;
+}
+
+.skills__list {
+  display: flex;
+  justify-content: center;
+}
+
+.skills__item {
+  height: 100px;
+  padding: 10px 20px;
+}
+
+.skills__item img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* PROJECTS */
+.projects {
+  background-color: #f2f2f2;
+}
+
+.projects__header {
+  text-align: center;
+}
+
+.projects__list {
+  display: flex;
+  justify-content: center;
+}
+
+.projects__item {
+  width: 300px;
+  height: 300px;
+  margin: 0 20px;
+}
+
+.projects__item img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+/* BLOG */
+.blog__header {
+  text-align: center;
+}
+.slideshow {
+  position: relative;
+}
+
+.slideshow__item {
+  max-width: 800px;
+  max-height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.slideshow__image {
+  max-width: inherit;
+  max-height: inherit;
+}
+
+.slideshow__btn {
+  position: absolute;
+  top: 50%;
+  border: none;
+  background: none;
+  font-size: 2em;
+}
+
+.slideshow__btn--left {
+  left: 20px;
+}
+
+.slideshow__btn--right {
+  right: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.slideshow__item--current {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s ease-out;
+}
