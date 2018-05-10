@@ -7,27 +7,45 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+    crossorigin="anonymous">
 </head>
 
 <body>
   <nav class='nav'>
-    <a class='nav__item nav__item--left' href="#">Glyn</a>
-    <a class='nav__item' href="#">About</a>
-    <a class='nav__item' href="#">Skills</a>
-    <a class='nav__item' href="#">Projects</a>
-    <a class='nav__item' href="#">Blog</a>
-    <a class='nav__item' href="#">Contact</a>
+    <a class='nav__item nav__item--left' href="#header">Glyn</a>
+    <a class='nav__item' href="#skills">Skills</a>
+    <a class='nav__item' href="#projects">Projects</a>
+    <a class='nav__item' href="#blog">Blog</a>
+    <a class='nav__item' href="#contact">Contact</a>
   </nav>
 
-  <section id='header' class='header'>
+  <section id='header' class='header' tabindex='0'>
     <h1>Glyn Lewington</h1>
     <img class='header__img' src="./images/portrait-pic.jpg" alt="">
     <p>Frotend Web Developer</p>
+
+    <div class='icons'>
+      <a class='icon-link' href="https://github.com/GlynL" target="_blank">
+        <i class="fab fa-2x fa-github"></i>
+      </a>
+      <a class='icon-link' href="https://twitter.com/GlynWebDev" target="_blank">
+        <i class="fab fa-2x fa-twitter"></i>
+      </a>
+      <a class='icon-link' href="https://www.linkedin.com/in/glynlewington/" target="_blank">
+        <i class="fab fa-2x fa-linkedin-in"></i>
+      </a>
+      <a class='icon-link' href="https://medium.com/@glynlewington" target="_blank">
+        <i class="fab fa-2x fa-medium-m"></i>
+      </a>
+    </div>
   </section>
 
-  <section id='skills' class='skills'>
+  <section id='skills' class='skills' tabindex='0'>
     <header class='skills__header'>
       <h2>Skills</h2>
+      <hr>
     </header>
     <div class='skills__list'>
       <div class='skills__item'>
@@ -42,46 +60,84 @@
     </div>
   </section>
 
-  <section id='projects' class='projects'>
+  <section id='projects' class='projects' tabindex='0'>
     <header class='projects__header'>
       <h2>Projects</h2>
+      <hr>
     </header>
     <div class='projects__list'>
       <div class='projects__item'>
-        <a href="#">
+        <a href="https://glynl.github.io/Hydrohealth/" target="_blank">
           <img src="images/hydrohealth-mobile.png" alt="">
         </a>
       </div>
       <div class='projects__item'>
-        <a href="#">
+        <a href="https://glynl.github.io/simon-game/" target="_blank">
           <img src="images/simon-game.png" alt="">
         </a>
       </div>
       <div class='projects__item'>
-        <a href="#">
+        <a href="https://glynl.github.io/TicTacToe/" target="_blank">
           <img src="images/tictactoe.png" alt="">
         </a>
       </div>
     </div>
   </section>
 
-  <section id='blog' class='blog'>
+  <section id='blog' class='blog' tabindex='0'>
     <header class='blog__header'>
       <h2>Blog</h2>
+      <hr>
     </header>
     <div class='slideshow'>
       <div class='slideshow__item slideshow__item--current'>
-        <img class='slideshow__image' src="images/blog-minimax.png" alt="">
+        <a class='slideshow__link' href="https://medium.com/@glynlewington/tictactoe-unbeatable-minimax-algorithm-2b843207d326" target="_blank">
+          <img class='slideshow__image' src="images/blog-minimax.png" alt="">
+        </a>
       </div>
       <div class='slideshow__item hidden'>
-        <img class='slideshow__image' src="images/blog-navbar.PNG" alt="">
+        <a class='slideshow__link' href="https://medium.com/@glynlewington/navbar-w-smooth-scrolling-same-page-links-accessibility-cf163b5427e4"
+          target="_blank">
+          <img class='slideshow__image' src="images/blog-navbar.PNG" alt="">
+        </a>
       </div>
       <button class="slideshow__btn slideshow__btn--left">&#10094;</button>
       <button class="slideshow__btn slideshow__btn--right">&#10095;</button>
     </div>
   </section>
 
-  <script src="scripts.js"></script>
+  <section id='contact' class='contact' tabindex='0'>
+    <header class='contact__header'>
+      <h2>Contact</h2>
+      <hr>
+    </header>
+    <form class='contact__form' action="https://formspree.io/glynlewington@gmail.com" method="POST">
+      <input class='contact__field' type="text" name="name" placeholder="Name">
+      <input class='contact__field' type="email" name="_replyto" placeholder="Email">
+      <textarea class='contact__field' name="message" id="" rows='10' cols="21" placeholder="Message"></textarea>
+      <input class='btn btn--contact' type="submit" value="Send">
+    </form>
+  </section>
+
+  <footer class='footer'>
+    <div class='icons'>
+      <a class='icon-link' href="https://github.com/GlynL" target="_blank">
+        <i class="fab fa-2x fa-github"></i>
+      </a>
+      <a class='icon-link' href="https://twitter.com/GlynWebDev" target="_blank">
+        <i class="fab fa-2x fa-twitter"></i>
+      </a>
+      <a class='icon-link' href="https://www.linkedin.com/in/glynlewington/" target="_blank">
+        <i class="fab fa-2x fa-linkedin-in"></i>
+      </a>
+      <a class='icon-link' href="https://medium.com/@glynlewington" target="_blank">
+        <i class="fab fa-2x fa-medium-m"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="./js/slideshow.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
