@@ -694,7 +694,6 @@ hr {
 .btn--contact {
   -ms-flex-item-align: start;
       align-self: flex-start; 
-      margin-top: 20px;
 }
 
 /* FOOTER */
