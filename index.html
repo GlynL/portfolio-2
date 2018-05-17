@@ -115,8 +115,10 @@
     <form class='contact__form' action="https://formspree.io/glynlewington@gmail.com" method="POST">
       <input class='contact__field' type="text" name="name" placeholder="Name" required>
       <input class='contact__field' type="email" name="_replyto" placeholder="Email" required>
-      <textarea class='contact__field' name="message" id="" rows='10' cols="21" placeholder="Message" required></textarea>
+      <textarea class='contact__field' name="message" rows='10' cols="21" placeholder="Message" required></textarea>
       <input class='btn btn--contact' type="submit" value="Send">
+      <input type="hidden" name="_next" value="/" />
+      <!-- redirect to home -->
     </form>
   </section>
 
