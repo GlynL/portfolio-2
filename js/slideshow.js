@@ -10,25 +10,11 @@ function prevSlide() {
   const length = slideshowItems.length - 1;
   for (let i = length; i >= 0; i--) {
     if (slideshowItems[i].classList.contains('slideshow__item--current')) {
-      slideshowItems[i].classList.remove('slideshow__item--current');
-      slideshowItems[i].classList.add('hidden');
-
+      hideCurrent(slideshowItems[i]);
       if (i === 0) {
-        slideshowItems[length].classList.remove('hidden');
-        slideshowItems[length].classList.add('slideToLeft');
-        setTimeout(() => {
-          slideshowItems[length].classList.add('slideshow__item--current');
-          slideshowItems[length].classList.remove('slideToLeft');
-        }, 50);
-
+        showNew(slideshowItems[length], 'prev');
       } else {
-        slideshowItems[i - 1].classList.remove('hidden');
-        slideshowItems[i - 1].classList.add('slideToLeft');
-        setTimeout(() => {
-          slideshowItems[i - 1].classList.add('slideshow__item--current');
-          slideshowItems[i - 1].classList.remove('slideToLeft');
-        }, 50);
-
+        showNew(slideshowItems[i - 1], 'prev');
       }
       return;
     }
@@ -38,29 +24,30 @@ function prevSlide() {
 function nextSlide() {
   for (let i = 0; i < slideshowItems.length; i++) {
     if (slideshowItems[i].classList.contains('slideshow__item--current')) {
-      slideshowItems[i].classList.remove('slideshow__item--current');
-      slideshowItems[i].classList.add('hidden');
-
+      hideCurrent(slideshowItems[i]);
       if (i === slideshowItems.length - 1) {
-        // hidden removes display none
-        slideshowItems[0].classList.remove('hidden');
-        slideshowItems[0].classList.add('slideToRight');
-        // timeout needed otherwise transition doesn't work
-        setTimeout(() => {
-          slideshowItems[0].classList.add('slideshow__item--current')
-          slideshowItems[0].classList.remove('slideToRight');
-        }, 50);
+        showNew(slideshowItems[0], 'next');
       } else {
-        slideshowItems[i + 1].classList.remove('hidden');
-        slideshowItems[i + 1].classList.add('slideToRight');
-        setTimeout(() => {
-          slideshowItems[i + 1].classList.add('slideshow__item--current');
-          slideshowItems[i + 1].classList.remove('slideToRight');
-
-        }, 50);
+        showNew(slideshowItems[i + 1], 'next');
       }
       return;
     }
   }
 }
 
+function hideCurrent(slide) {
+  slide.classList.remove('slideshow__item--current');
+  slide.classList.add('hidden');
+}
+
+function showNew(slide, prevNext) {
+  // hidden removes display none
+  slide.classList.remove('hidden');
+  const direction = prevNext === 'next' ? 'slideToRight' : 'slideToLeft';
+  slide.classList.add(direction);
+  // timeout needed otherwise transition doesn't work
+  setTimeout(() => {
+    slide.classList.add('slideshow__item--current');
+    slide.classList.remove(direction);
+  }, 50);
+}
