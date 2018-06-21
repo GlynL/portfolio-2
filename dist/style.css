@@ -557,6 +557,10 @@ hr {
   text-align: center;
 }
 
+.projects__subtitle {
+  text-align: center;
+}
+
 .projects__list {
   display: -webkit-box;
   display: -ms-flexbox;
