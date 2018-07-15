@@ -601,6 +601,7 @@ hr {
 .projects__item {
   width: 300px;
   margin: 0 20px;
+  padding: 10px;
   background: #fdfdfd;
   border-radius: 5px;
   display: flex;
@@ -613,6 +614,7 @@ hr {
   max-width: 100%;
   border-radius: 5px;
   display: block;
+  margin: 0 auto;
 }
 
 .projects__description {
@@ -770,9 +772,6 @@ hr {
   .projects__list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     text-align: center;
   }
   .projects__item {
@@ -787,9 +786,6 @@ hr {
   .projects__list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     text-align: center;
   }
   .projects__item {
