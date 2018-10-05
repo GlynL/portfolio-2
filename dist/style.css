@@ -635,6 +635,15 @@ hr {
   margin: 5px;
 }
 
+.projects__links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__links > .btn {
+  margin: 5px;
+}
+
 /* BLOG */
 .blog {
   background-color: #fdfdfd;
