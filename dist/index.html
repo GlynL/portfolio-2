@@ -1,289 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Merriweather:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+      integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
-    crossorigin="anonymous">
-</head>
+  <body>
+    <nav class="nav">
+      <a class="nav__item nav__item--left" href="#header">Glyn</a>
+      <a class="nav__item" href="#skills">Skills</a>
+      <a class="nav__item" href="#projects">Projects</a>
+      <a class="nav__item" href="#blog">Blog</a>
+      <a class="nav__item" href="#contact">Contact</a>
+      <i class="nav__item nav__item--hamburger fas fa-bars"></i>
+    </nav>
 
-<body>
-  <nav class='nav'>
-    <a class='nav__item nav__item--left' href="#header">Glyn</a>
-    <a class='nav__item' href="#skills">Skills</a>
-    <a class='nav__item' href="#projects">Projects</a>
-    <a class='nav__item' href="#blog">Blog</a>
-    <a class='nav__item' href="#contact">Contact</a>
-    <i class='nav__item nav__item--hamburger fas fa-bars'></i>
-  </nav>
+    <section id="header" class="header" tabindex="0">
+      <h1>Glyn Lewington</h1>
+      <img
+        class="header__img"
+        src="./images/portrait-pic.jpg"
+        alt="Glyn self-portrait"
+        title="Glyn"
+      />
+      <p>Frotend Web Developer</p>
 
-  <section id='header' class='header' tabindex='0'>
-    <h1>Glyn Lewington</h1>
-    <img class='header__img' src="./images/portrait-pic.jpg" alt="Glyn self-portrait" title='Glyn'>
-    <p>Frotend Web Developer</p>
-
-    <div class='icons'>
-      <a class='icon-link' href="https://github.com/GlynL" target="_blank">
-        <i class="fab fa-2x fa-github"></i>
-      </a>
-      <a class='icon-link' href="https://twitter.com/GlynWebDev" target="_blank">
-        <i class="fab fa-2x fa-twitter"></i>
-      </a>
-      <a class='icon-link' href="https://www.linkedin.com/in/glynlewington/" target="_blank">
-        <i class="fab fa-2x fa-linkedin-in"></i>
-      </a>
-      <a class='icon-link' href="https://medium.com/@glynlewington" target="_blank">
-        <i class="fab fa-2x fa-medium-m"></i>
-      </a>
-    </div>
-  </section>
-
-  <section id='skills' class='skills' tabindex='0'>
-    <header class='skills__header'>
-      <h2>Skills</h2>
-      <hr>
-    </header>
-    <div class="skills__list">
-      <div class='skills__row'>
-        <div class='skills__item'>
-          <img src="images/css3.png" alt="CSS3" title="CSS3">
-        </div>
-        <div class='skills__item'>
-          <img src="images/html.png" alt="HTML" title="HTML">
-        </div>
-        <div class='skills__item'>
-          <img src="images/js.png" alt="Javascript" title="Javascript">
-        </div>
-      </div>
-      <div class='skills__row'>
-        <div class='skills__item'>
-          <img src='images/react.png' alt='React' title="React">
-        </div>
-        <div class='skills__item'>
-          <img src='images/redux.png' alt='Redux' title="Redux">
-        </div>
-      </div>
-      <div class='skills__row'>
-        <div class='skills__item'>
-          <img src='images/node.png' alt='nodeJS' title="nodeJS">
-        </div>
-        <div class='skills__item'>
-          <img src='images/mongo.png' alt='mongoDB' title="mongoDB">
-        </div>
-      </div>
-    </div>
-
-
-  </section>
-
-  <section id='projects' class='projects' tabindex='0'>
-    <header class='projects__header'>
-      <h2>Projects</h2>
-      <hr>
-    </header>
-    <div class='projects__list'>
-      <div class='projects__item'>
-        <a href="https://glynl.github.io/Hydrohealth/" target="_blank">
-          <img src="images/hydrohealth-mobile.png" alt="Hydrohealth site" title="Hydrohealth">
+      <div class="icons">
+        <a class="icon-link" href="https://github.com/GlynL" target="_blank">
+          <i class="fab fa-2x fa-github"></i>
         </a>
-        <div class='projects__description'>
-          <p class='projects__description--tech'>
-            <span class='btn btn--inverse btn--nohover'>WordPress</span>
-            <span class='btn btn--inverse btn--nohover'>HTML5</span>
-            <span class='btn btn--inverse btn--nohover'>CSS3</span>
-            <span class='btn btn--inverse btn--nohover'>Javascript</span>
-          </p>
-          <p>Business website for client. Created a custom WordPress theme for design.</p>
-          <p>
-            <a class='btn btn--link' href="https://glynl.github.io/Hydrohealth/" target='_blank'>Live Site</a>
-            <a class='btn btn--link' href="https://github.com/GlynL/Hydrohealth" target='_blank'>Github</a>
-          </p>
-        </div>
-      </div>
-      <div class='projects__item'>
-        <a href="https://glynl.github.io/simon-game/" target="_blank">
-          <img src="images/simon-game.png" alt="simon game" title="simon game">
+        <a
+          class="icon-link"
+          href="https://twitter.com/GlynWebDev"
+          target="_blank"
+        >
+          <i class="fab fa-2x fa-twitter"></i>
         </a>
-        <div class='projects__description'>
-          <p class='projects__description--tech'>
-            <span class='btn btn--inverse btn--nohover'>HTML5</span>
-            <span class='btn btn--inverse btn--nohover'>CSS3</span>
-            <span class='btn btn--inverse btn--nohover'>Javascript</span>
-          </p>
-          <p>Simon Game challenge completed for FreeCodeCamp Frontend Certificate.</p>
-          <p>
-            <a class='btn btn--link' href="https://glynl.github.io/simon-game/" target='_blank'>Live Site</a>
-            <a class='btn btn--link' href="https://github.com/GlynL/simon-game" target='_blank'>Github</a>
-          </p>
-        </div>
-      </div>
-      <div class='projects__item'>
-        <a href="https://glynl.github.io/TicTacToe/" target="_blank">
-          <img src="./images/tictactoe.png" alt="TicTacToe" title='TicTacToe'>
+        <a
+          class="icon-link"
+          href="https://www.linkedin.com/in/glynlewington/"
+          target="_blank"
+        >
+          <i class="fab fa-2x fa-linkedin-in"></i>
         </a>
-        <div class='projects__description'>
-          <p class='projects__description--tech'>
-            <span class='btn btn--inverse btn--nohover'>HTML5</span>
-            <span class='btn btn--inverse btn--nohover'>CSS3</span>
-            <span class='btn btn--inverse btn--nohover'>Javascript</span>
-          </p>
-          <p>TicTacToe challenge completed for FreeCodeCamp Frontend Certificate. Utilises minimax algorithm for
-            unbeatable
-            AI.
-          </p>
-          <p>
-            <a class='btn btn--link' href="https://glynl.github.io/TicTacToe/" target='_blank'>Live Site</a>
-            <a class='btn btn--link' href="https://github.com/GlynL/TicTacToe" target='_blank'>Github</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <h3 class='projects__subtitle'>
-      React
-      <i class="fab fa-react"></i>
-    </h3>
-    <hr>
-
-    <div class='projects__list'>
-      <div class='projects__item'>
-        <a href="https://markdown-previewer-g.herokuapp.com/" target="_blank">
-          <img src="images/markdown.png" alt="markdown-previewer" title='markdown previewer'>
-        </a>
-        <div class='projects__description'>
-          <p class='projects__description--tech'>
-            <span class='btn btn--inverse btn--nohover'>React</span>
-            <span class='btn btn--inverse btn--nohover'>HTML5</span>
-            <span class='btn btn--inverse btn--nohover'>CSS3</span>
-            <span class='btn btn--inverse btn--nohover'>Javascript</span>
-          </p>
-          <p>Markdown Previewer challenge completed for FreeCodeCamp Frontend Certificate.</p>
-          <p>
-            <a class='btn btn--link' href="https://markdown-previewer-g.herokuapp.com/" target='_blank'>Live Site</a>
-            <a class='btn btn--link' href="https://github.com/GlynL/markdown-previewer" target='_blank'>Github</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <h3 class='projects__subtitle'>
-      Fullstack
-    </h3>
-    <hr>
-
-    <div class='projects__list'>
-      <div class='projects__item'>
-        <a href="https://paihousing.com" target="_blank">
-          <img src="images/project-paihousing.PNG" alt="pai housing" title='pai housing'>
-        </a>
-        <div class='projects__description'>
-          <p class='projects__description--tech'>
-            <span class='btn btn--inverse btn--nohover'>Node</span>
-            <span class='btn btn--inverse btn--nohover'>Express</span>
-            <span class='btn btn--inverse btn--nohover'>MongoDB</span>
-            <span class='btn btn--inverse btn--nohover'>HTML5</span>
-            <span class='btn btn--inverse btn--nohover'>CSS3</span>
-            <span class='btn btn--inverse btn--nohover'>Javascript</span>
-          </p>
-          <p>Application to find or list an apartment in Pai.</p>
-          <p>
-            <a class='btn btn--link' href="https://paihousing.com" target='_blank'>Live Site</a>
-            <a class='btn btn--link' href="https://github.com/GlynL/housing" target='_blank'>Github</a>
-          </p>
-        </div>
-      </div>
-      <div class='projects__item'>
-        <a href="https://glynlewington.com/recipebox" target="_blank">
-          <img src="images/project-recipebox.PNG" alt="recipe box" title='recipe box'>
-        </a>
-        <div class='projects__description'>
-          <p class='projects__description--tech'>
-            <span class='btn btn--inverse btn--nohover'>Node</span>
-            <span class='btn btn--inverse btn--nohover'>Express</span>
-            <span class='btn btn--inverse btn--nohover'>MongoDB</span>
-            <span class='btn btn--inverse btn--nohover'>HTML5</span>
-            <span class='btn btn--inverse btn--nohover'>CSS3</span>
-            <span class='btn btn--inverse btn--nohover'>Javascript</span>
-            <span class='btn btn--inverse btn--nohover'>React</span>
-          </p>
-          <p>Application to store your favourite recipes.</p>
-          <p class='projects__links'>
-            <a class='btn btn--link' href="https://glynlewington.com/recipebox" target='_blank'>Live Site</a>
-            <a class='btn btn--link' href="https://github.com/GlynL/recipe-box--api" target='_blank'>Github API</a>
-            <a class='btn btn--link' href="https://github.com/GlynL/recipe-box--client" target='_blank'>Github Client</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id='blog' class='blog' tabindex='0'>
-    <header class='blog__header'>
-      <h2>Blog</h2>
-      <hr>
-    </header>
-    <div class='slideshow'>
-      <div class='slideshow__item slideshow__item--current'>
-        <a class='slideshow__link' href="https://medium.freecodecamp.org/how-to-allow-users-to-upload-images-with-node-express-mongoose-and-cloudinary-84cefbdff1d9"
-          target="_blank">
-          <img class='slideshow__image' src="images/blog-image-upload.png" alt="blog - image-upload" title="blog - image-upload">
+        <a
+          class="icon-link"
+          href="https://medium.com/@glynlewington"
+          target="_blank"
+        >
+          <i class="fab fa-2x fa-medium-m"></i>
         </a>
       </div>
-      <div class='slideshow__item hidden'>
-        <a class='slideshow__link' href="https://medium.com/@glynlewington/tictactoe-unbeatable-minimax-algorithm-2b843207d326"
-          target="_blank">
-          <img class='slideshow__image' src="images/blog-minimax.png" alt="blog - minimax" title="blog - minimax">
+    </section>
+
+    <section id="skills" class="skills" tabindex="0">
+      <header class="skills__header">
+        <h2>Skills</h2>
+        <hr />
+      </header>
+      <div class="skills__list">
+        <div class="skills__row">
+          <div class="skills__item">
+            <img src="images/css3.png" alt="CSS3" title="CSS3" />
+          </div>
+          <div class="skills__item">
+            <img src="images/html.png" alt="HTML" title="HTML" />
+          </div>
+          <div class="skills__item">
+            <img src="images/js.png" alt="Javascript" title="Javascript" />
+          </div>
+        </div>
+        <div class="skills__row">
+          <div class="skills__item">
+            <img src="images/react.png" alt="React" title="React" />
+          </div>
+          <div class="skills__item">
+            <img src="images/redux.png" alt="Redux" title="Redux" />
+          </div>
+        </div>
+        <div class="skills__row">
+          <div class="skills__item">
+            <img src="images/node.png" alt="nodeJS" title="nodeJS" />
+          </div>
+          <div class="skills__item">
+            <img src="images/mongo.png" alt="mongoDB" title="mongoDB" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects" tabindex="0">
+      <header class="projects__header">
+        <h2>Projects</h2>
+        <hr />
+      </header>
+      <div class="projects__list">
+        <div class="projects__item">
+          <a href="https://glynl.github.io/Hydrohealth/" target="_blank">
+            <img
+              src="images/hydrohealth-mobile.png"
+              alt="Hydrohealth site"
+              title="Hydrohealth"
+            />
+          </a>
+          <div class="projects__description">
+            <p class="projects__description--tech">
+              <span class="btn btn--inverse btn--nohover">WordPress</span>
+              <span class="btn btn--inverse btn--nohover">HTML5</span>
+              <span class="btn btn--inverse btn--nohover">CSS3</span>
+              <span class="btn btn--inverse btn--nohover">Javascript</span>
+            </p>
+            <p>
+              Business website for client. Created a custom WordPress theme for
+              design.
+            </p>
+            <p>
+              <a
+                class="btn btn--link"
+                href="https://glynl.github.io/Hydrohealth/"
+                target="_blank"
+                >Live Site</a
+              >
+              <a
+                class="btn btn--link"
+                href="https://github.com/GlynL/Hydrohealth"
+                target="_blank"
+                >Github</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="projects__item">
+          <a href="https://glynl.github.io/simon-game/" target="_blank">
+            <img
+              src="images/simon-game.png"
+              alt="simon game"
+              title="simon game"
+            />
+          </a>
+          <div class="projects__description">
+            <p class="projects__description--tech">
+              <span class="btn btn--inverse btn--nohover">HTML5</span>
+              <span class="btn btn--inverse btn--nohover">CSS3</span>
+              <span class="btn btn--inverse btn--nohover">Javascript</span>
+            </p>
+            <p>
+              Simon Game challenge completed for FreeCodeCamp Frontend
+              Certificate.
+            </p>
+            <p>
+              <a
+                class="btn btn--link"
+                href="https://glynl.github.io/simon-game/"
+                target="_blank"
+                >Live Site</a
+              >
+              <a
+                class="btn btn--link"
+                href="https://github.com/GlynL/simon-game"
+                target="_blank"
+                >Github</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="projects__item">
+          <a href="https://glynl.github.io/TicTacToe/" target="_blank">
+            <img
+              src="./images/tictactoe.png"
+              alt="TicTacToe"
+              title="TicTacToe"
+            />
+          </a>
+          <div class="projects__description">
+            <p class="projects__description--tech">
+              <span class="btn btn--inverse btn--nohover">HTML5</span>
+              <span class="btn btn--inverse btn--nohover">CSS3</span>
+              <span class="btn btn--inverse btn--nohover">Javascript</span>
+            </p>
+            <p>
+              TicTacToe challenge completed for FreeCodeCamp Frontend
+              Certificate. Utilises minimax algorithm for unbeatable AI.
+            </p>
+            <p>
+              <a
+                class="btn btn--link"
+                href="https://glynl.github.io/TicTacToe/"
+                target="_blank"
+                >Live Site</a
+              >
+              <a
+                class="btn btn--link"
+                href="https://github.com/GlynL/TicTacToe"
+                target="_blank"
+                >Github</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="projects__subtitle">React <i class="fab fa-react"></i></h3>
+      <hr />
+
+      <div class="projects__list">
+        <div class="projects__item">
+          <a href="https://markdown-previewer-g.herokuapp.com/" target="_blank">
+            <img
+              src="images/markdown.png"
+              alt="markdown-previewer"
+              title="markdown previewer"
+            />
+          </a>
+          <div class="projects__description">
+            <p class="projects__description--tech">
+              <span class="btn btn--inverse btn--nohover">React</span>
+              <span class="btn btn--inverse btn--nohover">HTML5</span>
+              <span class="btn btn--inverse btn--nohover">CSS3</span>
+              <span class="btn btn--inverse btn--nohover">Javascript</span>
+            </p>
+            <p>
+              Markdown Previewer challenge completed for FreeCodeCamp Frontend
+              Certificate.
+            </p>
+            <p>
+              <a
+                class="btn btn--link"
+                href="https://markdown-previewer-g.herokuapp.com/"
+                target="_blank"
+                >Live Site</a
+              >
+              <a
+                class="btn btn--link"
+                href="https://github.com/GlynL/markdown-previewer"
+                target="_blank"
+                >Github</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="projects__subtitle">Fullstack</h3>
+      <hr />
+
+      <div class="projects__list">
+        <div class="projects__item">
+          <a href="https://paihousing.com" target="_blank">
+            <img
+              src="images/project-paihousing.PNG"
+              alt="pai housing"
+              title="pai housing"
+            />
+          </a>
+          <div class="projects__description">
+            <p class="projects__description--tech">
+              <span class="btn btn--inverse btn--nohover">Node</span>
+              <span class="btn btn--inverse btn--nohover">Express</span>
+              <span class="btn btn--inverse btn--nohover">MongoDB</span>
+              <span class="btn btn--inverse btn--nohover">HTML5</span>
+              <span class="btn btn--inverse btn--nohover">CSS3</span>
+              <span class="btn btn--inverse btn--nohover">Javascript</span>
+            </p>
+            <p>Application to find or list an apartment in Pai.</p>
+            <p>
+              <a
+                class="btn btn--link"
+                href="https://paihousing.com"
+                target="_blank"
+                >Live Site</a
+              >
+              <a
+                class="btn btn--link"
+                href="https://github.com/GlynL/housing"
+                target="_blank"
+                >Github</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="projects__item">
+          <a href="https://glynlewington.com/recipebox" target="_blank">
+            <img
+              src="images/project-recipebox.PNG"
+              alt="recipe box"
+              title="recipe box"
+            />
+          </a>
+          <div class="projects__description">
+            <p class="projects__description--tech">
+              <span class="btn btn--inverse btn--nohover">Node</span>
+              <span class="btn btn--inverse btn--nohover">Express</span>
+              <span class="btn btn--inverse btn--nohover">MongoDB</span>
+              <span class="btn btn--inverse btn--nohover">HTML5</span>
+              <span class="btn btn--inverse btn--nohover">CSS3</span>
+              <span class="btn btn--inverse btn--nohover">Javascript</span>
+              <span class="btn btn--inverse btn--nohover">React</span>
+            </p>
+            <p>Application to store your favourite recipes.</p>
+            <p class="projects__links">
+              <a
+                class="btn btn--link"
+                href="https://glynlewington.com/recipebox"
+                target="_blank"
+                >Live Site</a
+              >
+              <a
+                class="btn btn--link"
+                href="https://github.com/GlynL/recipe-box--api"
+                target="_blank"
+                >Github API</a
+              >
+              <a
+                class="btn btn--link"
+                href="https://github.com/GlynL/recipe-box--client"
+                target="_blank"
+                >Github Client</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="projects__item">
+          <a href="https://glynlewington.com/issue-tracker" target="_blank">
+            <img
+              src="images/project-issue-tracker.PNG"
+              alt="issue tracker"
+              title="issue tracker"
+            />
+          </a>
+          <div class="projects__description">
+            <p class="projects__description--tech">
+              <span class="btn btn--inverse btn--nohover">Node</span>
+              <span class="btn btn--inverse btn--nohover">Express</span>
+              <span class="btn btn--inverse btn--nohover">MongoDB</span>
+              <span class="btn btn--inverse btn--nohover">HTML5</span>
+              <span class="btn btn--inverse btn--nohover">CSS3</span>
+              <span class="btn btn--inverse btn--nohover">Javascript</span>
+              <span class="btn btn--inverse btn--nohover">React</span>
+              <span class="btn btn--inverse btn--nohover">Redux</span>
+            </p>
+            <p>Application to track and manage project issues.</p>
+            <p class="projects__links">
+              <a
+                class="btn btn--link"
+                href="https://glynlewington.com/issue-tracker"
+                target="_blank"
+                >Live Site</a
+              >
+              <a
+                class="btn btn--link"
+                href="https://github.com/GlynL/issue-tracker--api"
+                target="_blank"
+                >Github API</a
+              >
+              <a
+                class="btn btn--link"
+                href="https://github.com/GlynL/issue-tracker--client"
+                target="_blank"
+                >Github Client</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog" tabindex="0">
+      <header class="blog__header">
+        <h2>Blog</h2>
+        <hr />
+      </header>
+      <div class="slideshow">
+        <div class="slideshow__item slideshow__item--current">
+          <a
+            class="slideshow__link"
+            href="https://medium.freecodecamp.org/how-to-allow-users-to-upload-images-with-node-express-mongoose-and-cloudinary-84cefbdff1d9"
+            target="_blank"
+          >
+            <img
+              class="slideshow__image"
+              src="images/blog-image-upload.png"
+              alt="blog - image-upload"
+              title="blog - image-upload"
+            />
+          </a>
+        </div>
+        <div class="slideshow__item hidden">
+          <a
+            class="slideshow__link"
+            href="https://medium.com/@glynlewington/tictactoe-unbeatable-minimax-algorithm-2b843207d326"
+            target="_blank"
+          >
+            <img
+              class="slideshow__image"
+              src="images/blog-minimax.png"
+              alt="blog - minimax"
+              title="blog - minimax"
+            />
+          </a>
+        </div>
+        <div class="slideshow__item hidden">
+          <a
+            class="slideshow__link"
+            href="https://medium.com/@glynlewington/navbar-w-smooth-scrolling-same-page-links-accessibility-cf163b5427e4"
+            target="_blank"
+          >
+            <img
+              class="slideshow__image"
+              src="images/blog-navbar.PNG"
+              alt="blog - navbar"
+              title="blog - navbar"
+            />
+          </a>
+        </div>
+        <button class="slideshow__btn slideshow__btn--left">&#10094;</button>
+        <button class="slideshow__btn slideshow__btn--right">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" tabindex="0">
+      <header class="contact__header">
+        <h2>Contact</h2>
+        <hr />
+      </header>
+      <form
+        class="contact__form"
+        action="https://formspree.io/glynlewington@gmail.com"
+        method="POST"
+      >
+        <input
+          class="contact__field"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="contact__field"
+          type="email"
+          name="_replyto"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          class="contact__field"
+          name="message"
+          rows="10"
+          cols="21"
+          placeholder="Message"
+          required
+        ></textarea>
+        <input class="btn btn--contact" type="submit" value="Send" />
+        <input type="hidden" name="_next" value="/" />
+        <!-- redirect to home -->
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="icons">
+        <a class="icon-link" href="https://github.com/GlynL" target="_blank">
+          <i class="fab fa-2x fa-github"></i>
+        </a>
+        <a
+          class="icon-link"
+          href="https://twitter.com/GlynWebDev"
+          target="_blank"
+        >
+          <i class="fab fa-2x fa-twitter"></i>
+        </a>
+        <a
+          class="icon-link"
+          href="https://www.linkedin.com/in/glynlewington/"
+          target="_blank"
+        >
+          <i class="fab fa-2x fa-linkedin-in"></i>
+        </a>
+        <a
+          class="icon-link"
+          href="https://medium.com/@glynlewington"
+          target="_blank"
+        >
+          <i class="fab fa-2x fa-medium-m"></i>
         </a>
       </div>
-      <div class='slideshow__item hidden'>
-        <a class='slideshow__link' href="https://medium.com/@glynlewington/navbar-w-smooth-scrolling-same-page-links-accessibility-cf163b5427e4"
-          target="_blank">
-          <img class='slideshow__image' src="images/blog-navbar.PNG" alt="blog - navbar" title='blog - navbar'>
-        </a>
-      </div>
-      <button class="slideshow__btn slideshow__btn--left">&#10094;</button>
-      <button class="slideshow__btn slideshow__btn--right">&#10095;</button>
-    </div>
-  </section>
+    </footer>
 
-  <section id='contact' class='contact' tabindex='0'>
-    <header class='contact__header'>
-      <h2>Contact</h2>
-      <hr>
-    </header>
-    <form class='contact__form' action="https://formspree.io/glynlewington@gmail.com" method="POST">
-      <input class='contact__field' type="text" name="name" placeholder="Name" required>
-      <input class='contact__field' type="email" name="_replyto" placeholder="Email" required>
-      <textarea class='contact__field' name="message" rows='10' cols="21" placeholder="Message" required></textarea>
-      <input class='btn btn--contact' type="submit" value="Send">
-      <input type="hidden" name="_next" value="/" />
-      <!-- redirect to home -->
-    </form>
-  </section>
-
-  <footer class='footer'>
-    <div class='icons'>
-      <a class='icon-link' href="https://github.com/GlynL" target="_blank">
-        <i class="fab fa-2x fa-github"></i>
-      </a>
-      <a class='icon-link' href="https://twitter.com/GlynWebDev" target="_blank">
-        <i class="fab fa-2x fa-twitter"></i>
-      </a>
-      <a class='icon-link' href="https://www.linkedin.com/in/glynlewington/" target="_blank">
-        <i class="fab fa-2x fa-linkedin-in"></i>
-      </a>
-      <a class='icon-link' href="https://medium.com/@glynlewington" target="_blank">
-        <i class="fab fa-2x fa-medium-m"></i>
-      </a>
-    </div>
-  </footer>
-
-  <script src="./js/min.js"></script>
-</body>
-
+    <script src="./js/min.js"></script>
+  </body>
 </html>
